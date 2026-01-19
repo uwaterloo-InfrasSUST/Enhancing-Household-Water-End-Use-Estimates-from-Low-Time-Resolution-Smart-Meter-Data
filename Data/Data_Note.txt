@@ -1,2 +1,3 @@
 Household water use pattern from pre-survey
 Household hourly water use data samples
+This sample data 
