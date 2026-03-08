@@ -14,11 +14,10 @@ The following files were originally part of `pysimdeum` and have been modified i
 - `pysimdeum/core/end_use.py`  
 - `pysimdeum/core/statistics.py`  
 
-### ABC settings 
-
-# Seeds: DEFAULT (system time-based)
+## ABC settings 
+### Seeds: DEFAULT (system time-based)
    pyABC uses system timestamp as seed by default
-# Tolerances: 
+### Tolerances: 
 Adaptive P-Norm Distance with MAD scaling
 distance = AdaptivePNormDistance(
      p=1,                              # L1 norm (Manhattan distance)
@@ -28,5 +27,5 @@ distance = AdaptivePNormDistance(
  - Reduction strategy: Adaptive quantile-based (default: median)
  - No minimum epsilon specified
  - Terminates by max_nr_populations or max_walltime
-# Transition Kernel: DEFAULT
+### Transition Kernel: DEFAULT
 
