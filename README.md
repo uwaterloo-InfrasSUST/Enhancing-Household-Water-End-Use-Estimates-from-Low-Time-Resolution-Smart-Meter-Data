@@ -14,7 +14,7 @@ The following files were originally part of `pysimdeum` and have been modified i
 - `pysimdeum/core/end_use.py`  
 - `pysimdeum/core/statistics.py`  
 
-## ABC settings 
+## ABC Settings 
 ### Seeds: DEFAULT (system time-based)
    pyABC uses system timestamp as seed by default
 ### Tolerances: 
