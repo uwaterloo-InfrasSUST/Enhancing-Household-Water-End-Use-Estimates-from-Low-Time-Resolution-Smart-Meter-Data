@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 
 # Load the data
-df = pd.read_excel("/Users/fangxinyu/Desktop/Sample Household meter data.xlsx")
+df = pd.read_excel("/Users/fangxinyu/Desktop/Household meter raw data.xlsx")
 
 # Step 1: Filter out days with abnormal daily consumption
 # Calculate daily consumption (sum of hourly values from column 2 onwards)
