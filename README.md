@@ -15,17 +15,18 @@ The following files were originally part of `pysimdeum` and have been modified i
 - `pysimdeum/core/statistics.py`  
 
 ## ABC Settings 
-### Seeds: DEFAULT (system time-based)
+### Seeds:
    pyABC uses system timestamp as seed by default
+   
 ### Tolerances: 
-Adaptive P-Norm Distance with MAD scaling
-distance = AdaptivePNormDistance(
-     p=1,                              # L1 norm (Manhattan distance)
-    scale_function=mad,    # Median Absolute Deviation for normalization
-)
- - Initial epsilon: Before the first generation, ABC randomly sampled a set of parameters from the prior distributions and generated simulations. The initial MADs are then calculated across all these simulations for each summary statistic. 
- - Reduction strategy: Adaptive quantile-based (default: median)
- - No minimum epsilon specified
- - Terminates by max_nr_populations or max_walltime
+Adaptive P-Norm Distance with Median Absolute Deviation (MAD) scaling 
 
-### Transition Kernel: DEFAULT
+distance = AdaptivePNormDistance(p=1, #L1 norm (Manhattan distance), scale_function=mad #Median Absolute Deviation for normalization)
+    
+ - Initial epsilon: Before the first generation, ABC randomly sampled a set of parameters from the prior distributions and generated simulations. The initial MADs are then calculated across all these simulations for each summary statistic. 
+ - Reduction strategy: Adaptive quantile-based
+ - No minimum epsilon specified
+ - Terminates by number of generation (max_nr_populations) or maximun total inference time (max_walltime)
+
+### Transition Kernel: 
+   Transition or perturbation strategies to propose new parameters based on the current population (using PyABC default setting)
