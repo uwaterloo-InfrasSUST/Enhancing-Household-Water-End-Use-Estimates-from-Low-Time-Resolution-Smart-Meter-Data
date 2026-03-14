@@ -8,7 +8,7 @@
 
 #1.Determine the number of household members using pre-trial survey data.
 #2.Determine available water use fixtures at home from pre-trial survey data.
-#3.Aggregated 'bathroom tap' and 'kitchen tap' into a single 'kitchentap' class.(Original model treated them as separate end-uses; we combined them.The name 'kitchentap' is retained, but frequency = bathroomtap + kitchen tap.)
+#3.Aggregated 'bathroom tap' and 'kitchen tap' into a single 'kitchentap' class.(SIMDEUM treated them as separate end-uses; we combined them.The name 'kitchentap' is retained, but frequency = bathroomtap + kitchen tap.)
 #4.Introduced predefined prior distributions for end-use intensity,duration and frequency,based on pre-trial survey data.
 """
 import os
