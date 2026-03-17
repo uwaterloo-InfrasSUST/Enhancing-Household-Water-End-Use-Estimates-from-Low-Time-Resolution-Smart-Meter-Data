@@ -1,4 +1,4 @@
-This sample dataset includes hourly meter raw data from one househod ("household meter raw data.csv"), self-reported water use activities from the same household (Household water use pattern from pre-survey.csv), along with several days of hourly smart meter data (Household hourly water use data samples.csv). 
+This sample dataset includes hourly meter raw data from one househod ("Household meter raw data.csv"), self-reported water use activities from the same household (Household water use pattern from pre-survey.csv), along with several days of processed hourly smart meter data (Household hourly water use data samples - processed.csv). 
 
 This information is sufficient to test our approach for initializing the stochastic discrete event model and applying Bayesian inference using the household's hourly consumption data.
 
